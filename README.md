@@ -16,8 +16,15 @@ git clone https://github.com/jitinchekka/github-wrapper-api-cometlabs.git
 npm i
 3. Start the server on port 3000 by default
 npm start or node index.js
-4. Create a .env file and store your Github Personal Access token in the following Way
+4. Create a .env file and store your Github Personal Access token in the following Way   
 Example: Github_Api= YOUR_PAT
 Replace your PAT by your PAT
 5. Test the API using Postman
 
+### API Endpoints
+1. GET /api/repos
+2. POST /api/repos
+3. GET /api/repos/:repoName/topics
+4. PUT /api/repos/:repoName/topics
+5. DELETE /api/repos/:repoName/topics
+6. GET /api/stargazers/
