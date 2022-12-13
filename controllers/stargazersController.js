@@ -21,6 +21,21 @@ const getStargazers = async (req, res) => {
 			);
 			res.status(200).json(data);
 		}
+		else {
+			// Find the authenticated user
+			const { authuser } = await octokit.request("GET /user", {
+				token: API_KEY,
+			});
+			username = authuser.login;
+			const { data } = await octokit.request(
+				"GET /repos/{owner}/{repo}/stargazers",
+				{
+					owner: username,
+					repo: req.params.repoName,
+				}
+			);
+			res.status(200).json(data);
+		}
 	} catch (err) {
 		console.log("Error\n");
 		console.log("Repo name is: " + req.params.repoName);
