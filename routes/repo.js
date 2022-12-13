@@ -10,13 +10,9 @@ router.post("/", reposController.createRepo);
 router.get("/:repoName/topics", reposTopicsController.getRepoTopics);
 
 // update all respository topics
-// router.put("/:repoName/topics", reposTopicsController.updateRepoTopics);
+router.put("/:repoName/topics", reposTopicsController.updateRepoTopics);
 
 // delete all repository topics
-// router.delete(
-//   "/:repoName/topics",
-//   isAuth,
-//   reposTopicsController.deleteRepoTopics
-// );
+router.delete("/:repoName/topics", reposTopicsController.deleteRepoTopics);
 
 module.exports = router;

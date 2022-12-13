@@ -2,6 +2,7 @@
 const express = require('express');
 // Importing the repos router ./routes/repo.js
 const repos = require('./routes/repo'); 
+const stargazers = require('./routes/stargazers');
 const app = require('express')();
 const PORT = process.env.PORT || 3000;
 
@@ -13,6 +14,8 @@ app.get('/', (req, res) => {
 
 // Requests to /api/repos will be handled by repos router
 app.use('/api/repos', repos);
+// Requests to /api/stargazers will be handled by stargazers router
+app.use('/api/stargazers', stargazers);
 app.listen(PORT, () => {
 	  console.log(`Server is listening on port ${PORT}`);
 });
