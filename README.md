@@ -32,7 +32,7 @@ Example:
 ```
 Github_Api= YOUR_PAT
 ```
-Replace your PAT by your PAT
+Replace your PAT by your PAT   
 5. Test the API using Postman
 
 ### API Endpoints
