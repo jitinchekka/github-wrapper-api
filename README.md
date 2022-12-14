@@ -21,7 +21,11 @@ npm i
 ```
 3. Start the server on port 3000 by default
 ``` shell
-npm start or node index.js
+npm start 
+```
+<div align="center">OR</div>
+``` shell
+node inde.js
 ```
 4. Create a .env file and store your Github Personal Access token in the following Way   
 Example: 
@@ -33,29 +37,41 @@ Replace your PAT by your PAT
 
 ### API Endpoints
 1. `GET /api/repos`: API endpoint that can list all Repos of a User
-Request Body:
+**Request Body:**
 - Username of user (if not mentioned lists the repos of authenticated user)
 2. `POST /api/repos`:  API endpoint that can create a repo with the name provided by the user   
-Request Body:
+**Request Body:**
 - name (Compulsory)
 - description(Optional)
 - private (optional defaults to true)
 3. `GET /api/repos/:repoName/topics`: API endpoint for listing the repo topics   
-Request Body:
+**Request Body:**
 - username (Optional defaults to the authenticated user)
 Request Params:
 - repoName
 4. `PUT /api/repos/:repoName/topics`: API endpoint for Updating the repo topics   
-Request Body:
+**Request Body:**
 - username (Optional defaults to the authenticated user)
 Request Params:
 - repoName
 5. `DELETE /api/repos/:repoName/topics`: API endpoint for deleting the repo topics   
-Request Body:
+__Request Body:__
 - username (Optional defaults to the authenticated user)
 Request Params:
 - repoName
 6. `GET /api/stargazers/`: API endpoint for listing all stargazers   
-Request Body:
+__Request Body:__
 - username (Optional defaults to the authenticated user)
 - repo
+7. `GET /api/repos/repo-with-filters?owner=false`: API endpoint to list all the repos of a given user with > 5 commits in last 10 days
+__Request Query Params:__
+- owner=false (commits made by anyone)
+__Request Body:__
+- username (Optional defaults to the authenticated user)
+![Screenshot 7](/images/repo-filters.jpg)
+8. `GET /api/repos/repo-with-filters?owner=true`: API endpoint to list all the repos of a given user with > 5 commits by owner in last 10 days
+__Request Query Params:__
+- owner=true (commits made by owner)
+__Request Body:__
+- username (Optional defaults to the authenticated user)
+![Screenshot 8](/images/repo-filters-owner.jpg)
