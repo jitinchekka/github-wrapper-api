@@ -7,7 +7,7 @@
 <div align="center">
 <img src="https://badges.aleen42.com/src/node.svg" alt="Node.js">
 <img src="https://badges.aleen42.com/src/javascript.svg" alt="JavaScript">
-<img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=Postman&logoColor=white" alt="Postman"/>
+<img src="https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=Postman&logoColor=white" alt="Postman"/>
 </div>
 
 ### Installation
