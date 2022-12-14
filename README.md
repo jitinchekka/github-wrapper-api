@@ -63,15 +63,15 @@ Request Params:
 __Request Body:__
 - username (Optional defaults to the authenticated user)
 - repo
-7. `GET /api/repos/repo-with-filters?owner=false`: API endpoint to list all the repos of a given user with > 5 commits in last 10 days
-__Request Query Params:__
-- owner=false (commits made by anyone)
-__Request Body:__
-- username (Optional defaults to the authenticated user)
-![Screenshot 7](/images/repo-filters.jpg)
-8. `GET /api/repos/repo-with-filters?owner=true`: API endpoint to list all the repos of a given user with > 5 commits by owner in last 10 days
-__Request Query Params:__
-- owner=true (commits made by owner)
-__Request Body:__
-- username (Optional defaults to the authenticated user)
+7. `GET /api/repos/repo-with-filters?owner=false`: API endpoint to list all the repos of a given user with > 5 commits in last 10 days   
+__Request Query Params:__   
+- owner=false (commits made by anyone)   
+__Request Body:__   
+- username (Optional defaults to the authenticated user)      
+![Screenshot 7](/images/repo-filters.jpg)   
+8. `GET /api/repos/repo-with-filters?owner=true`: API endpoint to list all the repos of a given user with > 5 commits by owner in last 10 days   
+__Request Query Params:__   
+- owner=true (commits made by owner)   
+__Request Body:__   
+- username (Optional defaults to the authenticated user)   
 ![Screenshot 8](/images/repo-filters-owner.jpg)
