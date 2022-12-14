@@ -23,7 +23,7 @@ npm i
 ``` shell
 npm start 
 ```
-<div align="center">OR</div>
+OR
 ``` shell
 node inde.js
 ```
