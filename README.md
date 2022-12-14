@@ -5,10 +5,9 @@
 
 ### Built With
 <div align="center">
-Node.js
-Express.js
+<img src="https://badges.aleen42.com/src/node.svg" alt="Node.js">
 <img src="https://badges.aleen42.com/src/javascript.svg" alt="JavaScript">
-Github API
+<img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white" alt="Postman"/>
 </div>
 
 ### Installation
@@ -36,27 +35,27 @@ Replace your PAT by your PAT
 1. `GET /api/repos`: API endpoint that can list all Repos of a User
 Request Body:
 - Username of user (if not mentioned lists the repos of authenticated user)
-2. `POST /api/repos`:  API endpoint that can create a repo with the name provided by the user
+2. `POST /api/repos`:  API endpoint that can create a repo with the name provided by the user   
 Request Body:
 - name (Compulsory)
 - description(Optional)
 - private (optional defaults to true)
-3. `GET /api/repos/:repoName/topics`: API endpoint for listing the repo topics
+3. `GET /api/repos/:repoName/topics`: API endpoint for listing the repo topics   
 Request Body:
 - username (Optional defaults to the authenticated user)
 Request Params:
 - repoName
-4. `PUT /api/repos/:repoName/topics`: API endpoint for Updating the repo topics
+4. `PUT /api/repos/:repoName/topics`: API endpoint for Updating the repo topics   
 Request Body:
 - username (Optional defaults to the authenticated user)
 Request Params:
 - repoName
-5. `DELETE /api/repos/:repoName/topics`: API endpoint for deleting the repo topics
+5. `DELETE /api/repos/:repoName/topics`: API endpoint for deleting the repo topics   
 Request Body:
 - username (Optional defaults to the authenticated user)
 Request Params:
 - repoName
-6. `GET /api/stargazers/`: API endpoint for listing all stargazers
+6. `GET /api/stargazers/`: API endpoint for listing all stargazers   
 Request Body:
 - username (Optional defaults to the authenticated user)
 - repo
