@@ -36,7 +36,7 @@ Replace your PAT by your PAT
 5. Test the API using Postman
 
 ### API Endpoints
-1. `GET /api/repos`: API endpoint that can list all Repos of a User
+1. `GET /api/repos`: API endpoint that can list all Repos of a User   
 **Request Body:**
 - Username of user (if not mentioned lists the repos of authenticated user)
 2. `POST /api/repos`:  API endpoint that can create a repo with the name provided by the user   
