@@ -8,6 +8,7 @@
 <img src="https://badges.aleen42.com/src/node.svg" alt="Node.js">
 <img src="https://badges.aleen42.com/src/javascript.svg" alt="JavaScript">
 <img src="https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=Postman&logoColor=white" alt="Postman"/>
+ ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white
 </div>
 
 ### Installation
